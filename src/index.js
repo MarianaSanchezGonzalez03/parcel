@@ -7,12 +7,12 @@ const main = async ()=>{
 
     const output = products?.map((product) => {
         return`
-        <artcle class ="Card">
+        <article class ="Card">
             <img src="${product.images[0]}">
             <h2>
                 ${product.title} <small>Precio $ ${product.price}</small>
             </h2>
-        </artcle>
+        </article>
         `;
 }).join('');
 let newItem = document.createElement("section");
